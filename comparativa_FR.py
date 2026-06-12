@@ -145,7 +145,7 @@ fig00, ax =plt.subplots(figsize=(10,7.5),constrained_layout=True,sharey=True,sha
 
 ax.set_ylabel('M (A/m)')
 
-for i,e in enumerate(ciclos_FR[:4]):
+for i,e in enumerate(ciclos_FR[:]):
     _,_,_, H_FR,M_FR,_ = lector_ciclos(ciclos_FR[i])
     ax.plot(H_FR/1000,M_FR,'-',label=f'{H0[i]:.1f}')
     
